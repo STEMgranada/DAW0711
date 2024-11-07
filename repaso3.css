@@ -1,0 +1,103 @@
+/* Mobile First Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Establece la fuente del documento */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el padding predeterminado */
+}
+
+header {
+    background-color: #333; /* Color de fondo del encabezado */
+    color: white; /* Color del texto del encabezado */
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+    justify-content: space-between; /* Espacia los elementos en los extremos */
+    padding: 10px; /* Espaciado interno del encabezado */
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+}
+
+.menu-icon {
+    cursor: pointer; /* Cambia el cursor al pasar sobre el ícono de menú */
+}
+
+.menu-icon span {
+    background-color: white; /* Color de fondo de las líneas del menú hamburguesa */
+    display: block; /* Hace que cada línea del menú sea un bloque */
+    height: 3px; /* Altura de cada línea */
+    margin: 5px 0; /* Espaciado vertical entre las líneas */
+    width: 25px; /* Ancho de cada línea */
+}
+
+.nav-bar {
+    width: 100%; /* Asegura que la barra de navegación ocupe el 100% del ancho */
+}
+
+.nav-bar ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    display: none; /* Oculta el menú por defecto */
+    flex-direction: column; /* Cambia la dirección del menú a columna */
+    width: 100%; /* Asegura que el menú ocupe todo el ancho */
+    padding: 0; /* Elimina el padding */
+    margin: 0; /* Elimina el margen */
+    background-color: #333; /* Color de fondo del menú desplegable */
+    position: absolute; /* Posiciona el menú de manera absoluta */
+    top: 60px; /* Ajusta la posición vertical según el tamaño del encabezado */
+}
+
+.nav-bar ul.active {
+    display: flex; /* Muestra el menú cuando está activo */
+}
+
+.nav-bar ul li {
+    width: 100%; /* Cada elemento de menú ocupará el 100% del ancho */
+}
+
+.nav-bar ul li a {
+    display: block; /* Hace que el enlace ocupe todo el espacio */
+    padding: 10px; /* Espaciado interno para los enlaces */
+    color: white; /* Color del texto de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+/* Estilos para la sección hero */
+.hero {
+    text-align: center; /* Centra el texto en la sección de héroe */
+}
+
+.hero img {
+    max-width: 100%; /* Asegura que la imagen sea responsiva */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+}
+
+.menu ul {
+    padding: 20px; /* Espaciado interno para la lista del menú */
+}
+
+.gallery {
+    display: flex; /* Utiliza flexbox para organizar la galería */
+    flex-direction: column; /* Organiza los elementos en columna */
+    gap: 10px; /* Espacio entre elementos de la galería */
+}
+
+/* Media Queries */
+@media (min-width: 601px) {
+    .nav-bar ul {
+        display: flex; /* Muestra el menú en horizontal en pantallas grandes */
+        flex-direction: row; /* Cambia la dirección del menú a fila */
+        position: static; /* Hace que la posición sea estática en pantallas grandes */
+        top: auto; /* Restablece la posición vertical */
+    }
+
+    .gallery {
+        display: grid; /* Cambia la disposición de la galería a cuadrícula */
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en la galería */
+    }
+}
+
+@media (min-width: 1025px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr); /* Tres columnas en la galería para pantallas grandes */
+    }
+
+    .menu-icon {
+        display: none; /* Oculta el ícono del menú en pantallas grandes */
+    }
+}
