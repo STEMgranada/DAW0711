@@ -1,22 +1,56 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Prueba</title>
+    <title>Academia de Francés</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
-    <!-- Comentado -->
+
     <header>
-        <h1>Prueba</h1>
-        <h3>Esto es un subtítulo</h3>
+        <h1>Academia de Francés</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#courses">Cursos</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <h4>Esto es un título</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo amet, dolores optio blanditiis libero perferendis quas, veritatis voluptatum delectus iusto deserunt voluptatem ut harum, soluta aliquam eveniet? Quaerat vitae provident distinctio quo corporis nobis excepturi expedita architecto, atque consequuntur, ut nemo aspernatur. Facere dolores veritatis placeat fuga accusamus consectetur ab!</p>
-    </main>
-    <footer>
-        <p>Esto es un pie de página</p>
+
+    <section id="home" class="intro">
+        <h2>Bienvenidos a nuestra academia</h2>
+        <p>Ofrecemos <span class="highlight">cursos de francés</span> para todos los niveles.</p>
+        <button onclick="scrollToCourses()">Ver Cursos</button>
+    </section>
+
+    <section id="courses" class="courses">
+        <h2>Nuestros Cursos</h2>
+        <ul>
+            <li class="course">Curso de francés para principiantes</li>
+            <li class="course">Curso de francés intermedio</li>
+            <li class="course">Curso de francés avanzado</li>
+        </ul>
+    </section>
+
+    <section id="about">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una academia dedicada a enseñar francés de forma <em>interactiva</em> y <strong>efectiva</strong>.</p>
+    </section>
+
+    <footer id="contact">
+        <h2>Contacto</h2>
+        <p><span class="icon">📧</span> Email: <a href="mailto:info@academiadefrances.com">info@academiadefrances.com</a></p>
+        <p><span class="icon">📞</span> Teléfono: +34 123 456 789</p>
+        <button>
+            <i class="fas fa-thumbs"></i> Like
+          </button>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
