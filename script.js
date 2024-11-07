@@ -11,3 +11,8 @@ function submitForm(event) {
         document.getElementById('feedback').classList.add('hidden');
     }, 2000);
 }
+
+document.getElementById('menu-icon').addEventListener('click', function() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('active');
+});
