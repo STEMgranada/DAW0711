@@ -1,5 +1,6 @@
-/* "Estilos para la p�gina de contacto" */
+/* Estilos generales para la página de contacto */
 
+/* Establece la fuente y el margen para el cuerpo de la página */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,39 +8,53 @@ body {
     background-color: #f2f2f2;
 }
 
+/* Estilos para el encabezado de la página */
 header {
+    /* Establece el color de fondo y el texto para el encabezado */
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
 }
 
+/* Estilos para el título principal del encabezado */
 header h1 {
+    /* Elimina el margen superior para el título */
     margin: 0;
 }
 
+/* Estilos para el subtítulo del encabezado */
 header h3 {
+    /* Elimina el margen superior para el subtítulo y establece el tamaño de fuente */
     margin: 0;
     font-size: 18px;
 }
 
+/* Estilos para el contenido principal de la página */
 main {
+    /* Establece la disposición en columna y alinea los elementos verticalmente */
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
 }
 
+/* Estilos para los títulos de sección en el contenido principal */
 main h4 {
+    /* Elimina el margen superior para los títulos de sección */
     margin-top: 0;
 }
 
+/* Estilos para los párrafos en el contenido principal */
 main p {
+    /* Justifica el texto y establece el margen inferior para los párrafos */
     text-align: justify;
     margin-bottom: 20px;
 }
 
+/* Estilos para el pie de página */
 footer {
+    /* Establece el color de fondo y el texto para el pie de página */
     background-color: #333;
     color: #fff;
     padding: 10px;
@@ -47,6 +62,8 @@ footer {
     clear: both;
 }
 
+/* Estilos para los párrafos en el pie de página */
 footer p {
+    /* Elimina el margen para los párrafos en el pie de página */
     margin: 0;
 }
